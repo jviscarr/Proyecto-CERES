@@ -7,4 +7,7 @@
       <context-root>view-web-admin</context-root>
     </web>
   </module>
+  <module>
+    <ejb>ejb-module.jar</ejb>
+  </module>
 </application>
