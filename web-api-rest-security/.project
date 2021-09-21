@@ -3,6 +3,8 @@
 	<name>web-api-rest-security</name>
 	<comment></comment>
 	<projects>
+		<project>ejb-module</project>
+		<project>jpa-module</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

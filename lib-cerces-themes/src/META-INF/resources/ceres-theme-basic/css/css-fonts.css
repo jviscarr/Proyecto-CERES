@@ -1,0 +1,43 @@
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: normal;
+	
+	src: url("#{resource['ceres-theme-basic:fonts/Roboto-Light.ttf']}");
+	src: local("Roboto Light"), local("Roboto-Light"),
+		url("#{resource['ceres-theme-basic:fonts/Roboto-Light.ttf']}")
+			format("truetype");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: italic;
+	font-weight: normal;
+	
+	src: url("#{resource['ceres-theme-basic:fonts/Roboto-LightItalic.ttf']}");
+	src: local("Roboto Italic"), local("Roboto-Italic"),
+		url("#{resource['ceres-theme-basic:fonts/Roboto-LightItalic.ttf']}")
+			format("truetype");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: bold;
+	
+	src: url("#{resource['ceres-theme-basic:fonts/Roboto-Bold.ttf']}");
+	src: local("Roboto Bold"), local("Roboto-Bold"),
+		url("#{resource['ceres-theme-basic:fonts/Roboto-Bold.ttf']}")
+			format("truetype");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: italic;
+	font-weight: bold;
+	
+	src: url("#{resource['ceres-theme-basic:fonts/Roboto-BoldItalic.ttf']}");
+	src: local("Roboto BoldItalic"), local("Roboto-BoldItalic"),
+		url("#{resource['ceres-theme-basic:fonts/Roboto-BoldItalic.ttf']}")
+			format("truetype");
+}

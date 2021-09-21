@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<!DOCTYPE html> 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:f="http://java.sun.com/jsf/core"
@@ -7,13 +7,14 @@
 
 	<h:head>
 		<title>Login</title>
-		
 		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		
 		<h:outputStylesheet library="css" name="primeflex-master/primeflex.css"/>
-		<h:outputStylesheet library="css" name="themes/basic/css.css"/>
-		<h:outputStylesheet library="css" name="themes/basic/index.css"/>
+		<h:outputStylesheet library="ceres-theme-basic" name="css/css-fonts.css"/>
+		<h:outputStylesheet library="ceres-theme-basic" name="css/css.css"/>
+		
+		<h:outputScript library="js" name="lottie-player.js" target="head"/>
 	</h:head>
 	<h:body styleClass="ui-ceres-body">
 		<p:spacer height="25"></p:spacer>
@@ -23,13 +24,20 @@
 				<p:spacer height="20"></p:spacer>
 				<h:form id="frm1">
 					<div id="pnlGrp1" class="ui-fluid">
+						<div style="width:100px;margin:auto;">
+							<lottie-player src="#{resource['ceres-theme-basic:json/53888-login-icon.json']}"  
+							background="transparent" 
+							style="max-width: 100px;align-items:center;"  
+							speed="1.5" loop="true" autoplay="true"></lottie-player>
+						</div>
+					
 						<div class="p-field">
 							<p:outputLabel for="itUsuario" styleClass="ui-sr-only ui-form-label" value="Usuario" />
-							<p:inputText id="itUsuario" placeholder="Usuario" />
+							<p:inputText id="itUsuario" placeholder="Usuario" value="#{index.user}" />
 						</div>
 						<div class="p-field">
 							<p:outputLabel for="pwdPassword" styleClass="ui-sr-only  ui-form-label" value="Contraseña" />
-							<p:password id="pwdPassword" placeholder="Contraseña"></p:password>
+							<p:password id="pwdPassword" placeholder="Contraseña" value="#{index.password}"></p:password>
 						</div>
 						
 						<div class="ui-sm-12" style="text-align: right;">
