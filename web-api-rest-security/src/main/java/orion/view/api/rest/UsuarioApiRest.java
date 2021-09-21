@@ -30,7 +30,7 @@ import orion.view.api.GeneralApiRest;
  * @author jviscarr
  *
  */
-@Path("/usuarioApi")
+@Path("/usuarioApi") 
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class UsuarioApiRest extends GeneralApiRest{
